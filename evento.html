@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Eventos - Eglys Pastelería</title>
+  <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body onload="requireLogin(); renderProducts('listaEventos','evento')">
+  <div class="wrapper">
+    <div class="header">
+        <img class="logo" src="img/Eglys Escalante.png" alt="Eglys Escalante">
+      <div>
+        <h2> Eventos</h2>
+        <div class="small">Crea momentos, nosotros ponemos la magia</div>
+      </div>
+    </div>
+
+    <div id="listaEventos" class="products"></div>
+
+    <div class="card center">
+      <a class="link-btn" href="servicio.html">Volver</a>
+      <a class="link-btn" href="detalle-pedido.html">Ver Pedido</a>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

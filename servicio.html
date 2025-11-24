@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Servicios - Eglys Pastelería</title>
+  <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body onload="requireLogin();">
+  <div class="wrapper">
+    <div class="header">
+        <img class="logo" src="img/Eglys Escalante.png" alt="Eglys Escalante">
+      <div>
+        <h2> Servicios</h2>
+        <div class="small">Selecciona el servicio que deseas solicitar</div>
+      </div>
+    </div>
+
+    <div class="card center" style="gap:12px;flex-direction:column">
+      <a class="btn" href="producto.html">Tortas</a>
+      <a class="btn" href="evento.html">Eventos</a>
+      <button class="link-btn" onclick="logout()">Cerrar sesión</button>
+    </div>
+
+    <div class="footer">Bienvenido. Selecciona una categoría.</div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

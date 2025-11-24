@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Ingreso - Eglys Pastelería</title>
+  <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+        <img class="logo" src="img/Eglys Escalante.png" alt="Eglys Escalante">
+      <div>
+        <h2>Ingreso</h2>
+        <div class="small">Accede con tu correo y contraseña</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <form id="loginForm" onsubmit="event.preventDefault(); loginUser(this);">
+        <div class="form-group">
+          <label class="label">Usuario (correo)</label>
+          <input class="input" name="usuario" type="email" placeholder="correo@ejemplo.com" required/>
+        </div>
+        <div class="form-group">
+          <label class="label">Contraseña</label>
+          <input class="input" name="contraseña" type="password" required/>
+        </div>
+        <div class="row">
+          <button class="btn" type="submit">Ingresar</button>
+          <a class="link-btn" href="registro.html" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center">Registrarse</a>
+        </div>
+      </form>
+    </div>
+
+    <div class="footer">Si no tienes cuenta, regístrate.</div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

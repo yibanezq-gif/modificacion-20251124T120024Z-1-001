@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Detalle Pedido - Eglys Pastelería</title>
+  <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body onload="requireLogin(); renderCart('cartList')">
+  <div class="wrapper">
+    <div class="header">
+        <img class="logo" src="img/Eglys Escalante.png" alt="Eglys Escalante">
+      <div>
+        <h2>Resumen del pedido</h2>
+        <div class="small">Verifica tu pedido antes de confirmar</div>
+      </div>
+    </div>
+
+    <div id="cartList" class="card"></div>
+
+    <div class="card center" style="gap:10px">
+      <button class="btn" onclick="confirmOrder()">Confirmar Pedido</button>
+      <a class="link-btn" href="producto.html">Seguir comprando</a>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

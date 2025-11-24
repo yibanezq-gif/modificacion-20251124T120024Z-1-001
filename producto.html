@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Tortas - Eglys Pastelería</title>
+  <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body onload="requireLogin(); renderProducts('listaProductos','torta')">
+  <div class="wrapper">
+    <div class="header">
+        <img class="logo" src="img/Eglys Escalante.png" alt="Eglys Escalante">
+      <div>
+        <h2>Tortas</h2>
+        <div class="small">Cada torta, una dulce tentación</div>
+      </div>
+    </div>
+
+    <div id="listaProductos" class="products"></div>
+
+    <div class="card center">
+      <a class="link-btn" href="servicio.html">Volver</a>
+      <a class="link-btn" href="detalle-pedido.html">Ver Pedido</a>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
